@@ -3,11 +3,3 @@ variable "Project.Worker.Pool" {
 
     value "azure-worker-pool" {}
 }
-
-variable "Octopus.Azure.Account" {
-    type = "AzureAccount"
-
-    value "demo-octopus-app" {
-        action = ["create-namespace-if-not-exists"]
-    }
-}
